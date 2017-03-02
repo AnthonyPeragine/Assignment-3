@@ -62,6 +62,7 @@ public class A3Q7 {
         new Wall(kw, 5, 5, Direction.EAST);
 
         //algorithm
+        //first square
         for (int first = 0; first < 12; first++) {
             jet.move();
             if (jet.getStreet() == 6 && jet.getAvenue() == 3) {
@@ -75,6 +76,7 @@ public class A3Q7 {
             }
 
         }
+        //second square
         for (int second = 0; second < 12; second++) {
             jet.move();
             if (jet.getStreet() == 3 && jet.getAvenue() == 0) {
@@ -87,6 +89,7 @@ public class A3Q7 {
                 jet.turnLeft();
             }
         }
+        //third square
         for (int third = 0; third < 12; third++) {
             jet.move();
             if (jet.getStreet() == 0 && jet.getAvenue() == 3) {
@@ -99,6 +102,7 @@ public class A3Q7 {
                 jet.turnLeft();
             }
         }
+        //final square
         for (int fourth = 0; fourth < 12; fourth++) {
             jet.move();
             if (jet.getStreet() == 3 && jet.getAvenue() == 6) {

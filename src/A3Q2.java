@@ -8,7 +8,6 @@ import becker.robots.Wall;
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-
 /**
  *
  * @author peraa0837
@@ -22,10 +21,10 @@ public class A3Q2 {
         // TODO code application logic here
         //create a city
         City kw = new City();
-        
+
         //create a robot
         Robot jet = new Robot(kw, 0, 2, Direction.WEST);
-        
+
         //creates walls
         new Wall(kw, 1, 1, Direction.NORTH);
         new Wall(kw, 1, 1, Direction.WEST);
@@ -35,15 +34,15 @@ public class A3Q2 {
         new Wall(kw, 2, 1, Direction.WEST);
         new Wall(kw, 2, 2, Direction.SOUTH);
         new Wall(kw, 2, 2, Direction.EAST);
-        
+
         //the loop to navigate around the box twice
         int counter = 0;
-        while(counter < 8){
-        jet.move();
-        jet.move();
-        jet.turnLeft();
-        jet.move();
-        counter++;
-    }
+        while (counter < 8) {
+            jet.move();
+            jet.move();
+            jet.turnLeft();
+            jet.move();
+            counter++;
+        }
     }
 }

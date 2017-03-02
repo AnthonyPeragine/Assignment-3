@@ -95,7 +95,7 @@ public class A3Q3 {
 
 
         }
-
+        //return to origin
         while (!jet.frontIsClear() == true) {
             if (jet.getDirection() == Direction.SOUTH) {
                 jet.turnRight();
@@ -117,4 +117,3 @@ public class A3Q3 {
         }
     }
 }
-

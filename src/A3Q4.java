@@ -44,13 +44,14 @@ public class A3Q4 {
 
 
         //algorithm
+        //moves to initial wall
         while (jet.frontIsClear() == true) {
             jet.move();
         }
         int counter = 0;
         while (true) {
 
-
+            //checks wall while moving north
             while (jet.getDirection() == Direction.NORTH && counter < 1) {
 
 
@@ -67,6 +68,7 @@ public class A3Q4 {
 
 
             }
+            //checks wall while moving south
             while (jet.getDirection() == Direction.SOUTH && counter < 1) {
 
 
@@ -83,6 +85,7 @@ public class A3Q4 {
 
 
             }
+            //checks wall while moving east
             while (jet.getDirection() == Direction.EAST && counter < 1) {
 
 
@@ -99,6 +102,7 @@ public class A3Q4 {
 
 
             }
+            //checks wall while moving west
             while (jet.getDirection() == Direction.WEST && counter < 1) {
 
 

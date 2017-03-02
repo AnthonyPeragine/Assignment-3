@@ -9,7 +9,6 @@ import becker.robots.Thing;
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-
 /**
  *
  * @author peraa0837
@@ -37,24 +36,24 @@ public class A3Q5 {
         new Thing(kw, 1, 1);
         new Thing(kw, 1, 1);
         new Thing(kw, 1, 1);
-        
+
         //algorithm
         int counter = 0;
-        while(counter < 10){
-            if(jet.canPickThing() && jet.getDirection() == Direction.EAST){
+        while (counter < 10) {
+            if (jet.canPickThing() && jet.getDirection() == Direction.EAST) {
                 jet.pickThing();
                 jet.move();
                 jet.putThing();
                 jet.turnAround();
                 counter++;
-            }else{
+            } else {
                 jet.move();
                 jet.turnAround();
             }
-            
-            
+
+
         }
         jet.turnAround();
-        
+
     }
 }

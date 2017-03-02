@@ -53,11 +53,11 @@ public class A3Q6 {
                 if (jet.canPickThing()) {
                     jet.pickAllThings();
                     jet.turnLeft();
-                }else{
+                } else {
                     break;
                 }
             }
-
+            //makes the bar 
             while (jet.countThingsInBackpack() > 0) {
                 jet.putThing();
                 jet.move();
@@ -66,6 +66,7 @@ public class A3Q6 {
                 jet.turnAround();
 
             }
+            //moves through the piles
             while (jet.getStreet() > 0 && jet.getAvenue() > 1) {
                 jet.move();
             }
